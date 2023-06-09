@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'home_page.dart';
-import 'cart_page.dart';
+import 'search_page.dart';
 import 'category_page.dart';
 import 'member_page.dart';
 
@@ -15,7 +15,7 @@ class IndexPage extends StatefulWidget {
 class _IndexPageState extends State<IndexPage> {
   static final List<Widget>_widgetOptions = <Widget>[
     const HomePage(),
-    const CartPage(),
+    const SearchPage(),
     const CateGoryPage(),
     const MemberPage(),
   ];
