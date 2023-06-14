@@ -1,3 +1,4 @@
+import 'package:app/widgets/double_text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:app/pages/ticket_view.dart';
@@ -65,16 +66,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     const Gap(40),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Text('Upcoming Flights', style: Styles.headLineStyle2),
-                        InkWell(
-                          onTap: () {},
-                          child: Text('View all', style: Styles.textStyle.copyWith(color: Styles.primaryColor)),
-                        )
-                      ],
-                    )
+                    const AppDoubleTextWidget(bigText: 'Upcoming Flights', smallText: 'View all'),
                   ],
               ),
             ),
@@ -95,16 +87,7 @@ class _HomePageState extends State<HomePage> {
             const Gap(15),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Text('Hotels', style: Styles.headLineStyle2),
-                  InkWell(
-                    onTap: () {},
-                    child: Text('View all', style: Styles.textStyle.copyWith(color: Styles.primaryColor)),
-                  )
-                ],
-              ),
+              child:const AppDoubleTextWidget(bigText: 'Hotels', smallText: 'View all'),
             ),
             const Gap(15),
             SingleChildScrollView(
